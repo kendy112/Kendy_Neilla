@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="Images/kendy-favicon-color.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio - KENDY Neilla Gisa</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/kendy-high-resolution-logo-transparent.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Kendy</span><br>Neilla Gisa From Rwanda</h1>
+        </div>
+    </div>
+</div>
+<!----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I specialize in crafting engaging and user-friendly interfaces. Proficient in languages such as HTML, CSS, and JavaScript, my primary focus lies in creating visually appealing and intuitive user experiences. Dedicated to staying updated with the latest design trends and best practices, I am committed to delivering seamless and responsive web applications that captivate users and elevate brand experiences.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML</span><br>Fundamental for structuring web content</li>
+                        <li><span>CSS</span><br>Used to style and format HTML elements</li>
+                        <li><span>JavaScript</span><br>Essential for adding interactivity and dynamic behavior to web pages</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>FlyBetter</span> - <b>Dec 2023:</b> An aviation-related application's website</li>
+                        <li><span>FlyConnect</span> - <b>Jan 2024:</b> A Facebook clone [FlyProject]</li>
+                        <li><span>AeroLink</span> - <b>Jan 2024:</b> A LinkedIn clone [FlyProject]</li>
+                        <li><span>FlyTube</span> - <b>Feb 2024:</b> A YouTube clone [FlyProject]</li>
+                        <li><span>FlyFlix</span> - <b>Feb 2024:</b> A Netflix clone [FlyProject]</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sept 2023 - Current</span><br><b>Rwanda Coding Academy -</b> Software Engineering and Embedded Systems</li>
+                        <li><span>Jan 2020 - Aug 2023</span><br><b>Lyc&eacute;e Notre Dame de C&icirc;teaux -</b> General Studies</li>
+                        <li><span>Jan 2011 - Nov 2019</span><br><b>Kigali Junior Academy -</b> Basic Knowledge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services------------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting the overall look and feel of a website, including layout, color scheme, typography, and imagery.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JavaScript Development</h2>
+                <p>Developing interactive and dynamic website features using JavaScript.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>Frontend Framework Integration</h2>
+                <p>Integrating frontend frameworks and libraries to streamline development and enhance functionality.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>FLYCONNECT</h3>
+                    <p>This is a facebook clone that works hand in hand with FlyBetter and other Fly ventures, all under the same tree of FlyProject.<br>
+                        Visit fly-connect.vercel.app to know more about FlyConnect.</p>
+                    <a href="https://fly-connect.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer small">
+                    <h3>FLYFLIX</h3>
+                    <p>This is a netflix clone that works hand in hand with FlyBetter and other Fly ventures, all under the same tree of FlyProject.<br>
+                        Visit fly-flix.vercel.app to know more about FlyFlix.</p>
+                    <a href="https://fly-flix.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>FLYTUBE</h3>
+                    <p>This is a youtube clone that works hand in hand with FlyBetter and other Fly ventures, all under the same tree of FlyProject.<br>
+                        Visit fly-tube.vercel.app to know more about FlyTube.</p>
+                    <a href="https://fly-tube.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!----------------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> kendyneilla@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +250784538850</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100044662162293"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/kendyneilla_12/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/KENDY Neilla Gisa-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Kendy N. Gisa, 2024 All Rights Reserved.<br> Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
